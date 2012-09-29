@@ -3,6 +3,7 @@
  */
 package com.devgupta.scanner.strategies;
 
+import java.io.File;
 import java.util.List;
 
 /**
@@ -16,7 +17,8 @@ public interface ScannerStrategy {
 	 * The general rule would be only to give files whose type is a video container such as 3gp,mp4,avi, mkv. 
 	 * @param holderDir
 	 * @return
+	 * @throws NotADirectoryException 
 	 */
-	public List<String> traverseDirectory(String holderDir);
+	public List<File> traverseDirectory(File holderDir) throws NotADirectoryException;
 	
 }

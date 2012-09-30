@@ -26,5 +26,6 @@
 	</info>
 	<dependencies>
 		<dependency org="org.mockito" name="mockito-core" rev="1.9.5-rc1"/>
+		<dependency org="com.google.guava" name="guava" rev="12.0" />
 	</dependencies>
 </ivy-module>

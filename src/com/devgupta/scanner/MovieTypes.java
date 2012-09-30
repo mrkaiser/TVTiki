@@ -1,23 +1,12 @@
 package com.devgupta.scanner;
 
-public enum MovieTypes{
-	THREEGP("3gp"),
-	AVI("avi"),
-	MP4("MP4"),
-	MKV("mkv");
+import com.google.common.collect.ImmutableSet;
+
+public class MovieTypes{
 	
+	static ImmutableSet<String> extensions = ImmutableSet.of("mkv","avi","mp4","3gp");
 	
-	
-	private String extension;
-	MovieTypes(String extension){
-		this.setExtension(extension);
+	public static ImmutableSet<String> getExtensionsSet(){
+		return extensions;
 	}
-	public String getExtension() {
-		return extension;
-	}
-	public void setExtension(String extension) {
-		this.extension = extension;
-	}
-	
-	
 }

@@ -4,8 +4,6 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.swing.plaf.basic.BasicInternalFrameTitlePane.MoveAction;
-
 import org.devgupta.utilities.FileNameUtilities;
 
 import com.devgupta.scanner.MovieTypes;
